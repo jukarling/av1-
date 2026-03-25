@@ -2,9 +2,9 @@
 body {
     display: grid;
     grid-template-areas: 
-        "seila0 seila0"
-        "seila2 seila1"
-        "seila3 seila3";
+        "haha0 haha0"
+        "haha2 haha1"
+        "haha3 haha3";
     grid-template-rows: 100px auto 80px;
     grid-template-columns: 1fr 4fr;
     gap: 10px;
@@ -13,8 +13,8 @@ body {
 }
 
 /* Header */
-.seila0 {
-    grid-area: seila0;
+.haha0 {
+    grid-area: haha0;
     background-color: rgb(194, 0, 152);
     display: flex;
     justify-content: center;
@@ -22,28 +22,66 @@ body {
 }
 
 /* Main */
-.seila1 {
-    grid-area: seila1;
+.haha1 {
+    grid-area: haha1;
     background-color: rgb(255, 0, 76);
     padding: 20px;
 }
 
 /* Aside */
-.seila2 {
-    grid-area: seila2;
-    background-color: #030d18;
-    padding: 20px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.haha2 h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #5c003f;
+}
+
+.beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.beneficios li {
+    background: white;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(128, 4, 4, 0.596);
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.promo {
+    margin-top: 20px;
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.haha2 {
+    grid-area: haha2;
+    background-color: #ff8fc77e;
+    padding: 25px;
+    color: white;
+
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(130, 4, 4, 0.600);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* Footer */
-.seila3 {
-    grid-area: seila3;
+.haha3 {
+    grid-area: haha3;
     background-color: brown;
     display: flex;
     justify-content: center;
@@ -52,7 +90,7 @@ body {
 }
 
 /* Produtos em cards */
-.mano {
+.produto {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -92,21 +130,16 @@ body {
 @media only screen and (max-width: 850px) {
     body {
         grid-template-areas: 
-            "seila0"
-            "seila1"
-            "seila2"
-            "seila3";
+            "haha0"
+            "haha1"
+            "haha2"
+            "haha3";
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    
-    .mano {
-        justify-content: center;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .seila2 {
+    .haha2 {
         display: none;
     }
 
