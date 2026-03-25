@@ -1,0 +1,116 @@
+/* Grid principal */
+body {
+    display: grid;
+    grid-template-areas: 
+        "seila0 seila0"
+        "seila2 seila1"
+        "seila3 seila3";
+    grid-template-rows: 100px auto 80px;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header */
+.seila0 {
+    grid-area: seila0;
+    background-color: rgb(194, 0, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+.seila1 {
+    grid-area: seila1;
+    background-color: rgb(255, 0, 76);
+    padding: 20px;
+}
+
+/* Aside */
+.seila2 {
+    grid-area: seila2;
+    background-color: #030d18;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(128, 4, 4, 0.596);
+}
+
+/* Footer */
+.seila3 {
+    grid-area: seila3;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Produtos em cards */
+.mano {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.divv {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.divv img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.divv h3 {
+    margin: 10px 0 5px;
+}
+
+.divv p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.divv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Responsividade */
+@media only screen and (max-width: 850px) {
+    body {
+        grid-template-areas: 
+            "seila0"
+            "seila1"
+            "seila2"
+            "seila3";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .mano {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .seila2 {
+        display: none;
+    }
+
+    .divv {
+        width: 120px;
+    }
+}
