@@ -15,17 +15,19 @@ body {
 /* Header */
 .haha0 {
     grid-area: haha0;
-    background-color: rgb(194, 0, 152);
+    background-color: rgb(163, 203, 95);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50%;
 }
 
 /* Main */
 .haha1 {
     grid-area: haha1;
-    background-color: rgb(255, 0, 76);
+    background-color: rgba(224, 249, 150, 0);
     padding: 20px;
+    border-radius: 10px;
 }
 
 /* Aside */
