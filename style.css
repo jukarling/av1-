@@ -25,7 +25,7 @@ body {
 /* Main */
 .haha1 {
     grid-area: haha1;
-    background-color: rgba(224, 249, 150, 0);
+    background-color: rgba(185, 201, 138, 0.801);
     padding: 20px;
     border-radius: 10px;
 }
@@ -58,8 +58,8 @@ body {
     margin-top: 20px;
     background: white;
     color: #333;
-    padding: 15px;
-    border-radius: 12px;
+    padding: 100px;
+    border-radius: 20px;
     text-align: center;
     font-weight: bold;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -68,7 +68,7 @@ body {
 
 .haha2 {
     grid-area: haha2;
-    background-color: #ff8fc77e;
+    background-color: rgba(185, 201, 138, 0.801);
     padding: 25px;
     color: white;
 
