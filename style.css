@@ -1,171 +1,272 @@
-/* Grid principal */
-body {
-    display: grid;
-    grid-template-areas:
-        "haha0 haha0"
-        "haha2 haha1"
-        "haha3 haha3";
-    grid-template-rows: 100px auto 80px;
-    grid-template-columns: 1fr 4fr;
-    gap: 20px;
-    font-family: Arial, sans-serif;
-    margin: 0;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-/* Header */
+
+body{
+display:grid;
+grid-template-areas:
+"haha0 haha0"
+"haha2 haha1"
+"haha3 haha3";
+
+grid-template-rows:100px auto 80px;
+grid-template-columns:1fr 4fr;
+
+gap:20px;
+font-family:Arial, sans-serif;
+background:#f5f7f2;
+padding:20px;
+}
+
 .haha0{
-    grid-area: haha0;
-    background-color: rgb(163, 203, 95);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+grid-area:haha0;
+background:rgb(163,203,95);
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 30px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
 }
 
-.logo{
-    width: 80px; 
-    height: auto;
-    margin-right: 15px;
+.menu{
+display:flex;
+gap:25px;
 }
 
-/* Main */
-.haha1 {
-    grid-area: haha1;
-    background-color: rgba(187, 225, 122, 0.692);
-    padding: 20px;
-    border-radius: 10px;
+.menu a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
 }
 
-/* Aside */
-.haha2 {
-    grid-area: haha2;
-    background-color: rgba(187, 225, 122, 0.692);
-    padding: 20px;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(130, 4, 4, 0.6);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.menu a:hover{
+color:#2d4d1f;
 }
 
-.haha2 h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: #5c003f;
+.carrinho{
+background:white;
+padding:10px 15px;
+border-radius:10px;
+font-size:14px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+text-align:center;
 }
 
-.beneficios {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+.finalizar{
+background:rgb(163,203,95);
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:8px;
+cursor:pointer;
+margin-top:5px;
 }
 
-.beneficios li {
-    background: white;
-    color: #333;
-    padding: 12px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    font-size: 16px;
-    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
+.finalizar:hover{
+background:rgb(140,180,70);
 }
 
-.promo {
-    margin-top: 20px;
-    background: white;
-    color: #333;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
+
+.haha0{
+grid-area:haha0;
+background:rgb(163,203,95);
+
+display:flex;
+justify-content:space-between; 
+align-items:center;
+
+padding:0 30px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
 }
 
-/* Footer */
-.haha3 {
-    grid-area: haha3;
-    background-color: rgba(187, 225, 122, 0.692);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.haha0 h1{
+color:white;
+font-size:28px;
 }
 
-/* Produtos */
-.produto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+.carrinho{
+background:white;
+padding:10px 15px;
+border-radius:10px;
+font-size:14px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+text-align:center;
 }
 
-.divv {
-    background-color: rgb(255, 251, 251);
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
-    padding: 20px;
-    width: 180px;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+
+
+.haha1{
+grid-area:haha1;
+background:rgba(187,225,122,0.6);
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
-.divv img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
+
+
+.haha2{
+grid-area:haha2;
+background:rgba(187,225,122,0.6);
+padding:20px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
-.divv h3 {
-    margin: 10px 0 5px;
+.haha2 h2{
+margin-bottom:15px;
+font-size:22px;
+color:#222;
 }
 
-.divv p {
-    margin: 0;
-    font-weight: bold;
+
+
+.beneficios{
+list-style:none;
+padding:0;
+width:100%;
 }
 
-.divv:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 4px 10px rgba(130, 4, 4, 0.6);
+.beneficios li{
+background:white;
+color:#333;
+padding:12px;
+margin-bottom:12px;
+border-radius:10px;
+font-size:16px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Botão */
+
+
+.promo{
+background:white;
+color:#333;
+padding:15px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+margin-top:15px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.promo img{
+width:180px;
+height:auto;
+display:block;
+margin:15px auto;
+}
+
+
+
+.haha3{
+grid-area:haha3;
+background:rgba(187,225,122,0.6);
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:12px;
+color:#333;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.produto{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:20px;
+}
+
+
+
+.divv{
+background:white;
+border-radius:15px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+padding:20px;
+width:180px;
+text-align:center;
+
+transition:transf/* RESPONSIVIDADE */orm 0.25s, box-shadow 0.25s;
+}
+
+.divv img{
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.divv h3{
+margin:10px 0 5px;
+font-size:16px;
+}
+
+.divv p{
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.divv:hover{
+transform:translateY(-6px);
+box-shadow:0 6px 14px rgba(0,0,0,0.15);
+}
+
+
+
 .botao{
-    background-color: rgb(163, 203, 95);
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    text-transform: uppercase;
+background:rgb(163,203,95);
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:25px;
+cursor:pointer;
+font-weight:bold;
+transition:background 0.3s;
 }
 
 .botao:hover{
-    background-color: rgb(140,180,70);
+background:rgb(140,180,70);
 }
 
-/* Responsividade */
-@media only screen and (max-width: 850px) {
-    body {
-        grid-template-areas: 
-            "haha0"
-            "haha1"
-            "haha2"
-            "haha3";
-        grid-template-columns: 1fr;
-    }
+
+
+@media (max-width:850px){
+
+body{
+grid-template-areas:
+"haha0"
+"haha1"
+"haha2"
+"haha3";
+
+grid-template-columns:1fr;
 }
 
-@media only screen and (max-width: 450px) {
-    .haha2 {
-        display: none;
-    }
+}
 
-    .divv {
-        width: 140px;
-    }
+@media (max-width:450px){
+
+.divv{
+width:100%;
+}
+
+.promo img{
+width:140px;
+}
+
 }
