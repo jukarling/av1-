@@ -1,36 +1,55 @@
 /* Grid principal */
 body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "haha0 haha0"
         "haha2 haha1"
         "haha3 haha3";
     grid-template-rows: 100px auto 80px;
     grid-template-columns: 1fr 4fr;
-    gap: 10px;
+    gap: 20px;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 /* Header */
-.haha0 {
+.haha0{
     grid-area: haha0;
     background-color: rgb(163, 203, 95);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    width: 100%;
+}
+
+.logo{
+    width: 80px; 
+    height: auto;
+    margin-right: 15px;
 }
 
 /* Main */
 .haha1 {
     grid-area: haha1;
-    background-color: rgba(185, 201, 138, 0.801);
+    background-color: rgba(187, 225, 122, 0.692);
     padding: 20px;
     border-radius: 10px;
 }
 
 /* Aside */
+.haha2 {
+    grid-area: haha2;
+    background-color: rgba(187, 225, 122, 0.692);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(130, 4, 4, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .haha2 h2 {
     margin-bottom: 15px;
     font-size: 22px;
@@ -47,51 +66,35 @@ body {
 .beneficios li {
     background: white;
     color: #333;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 10px;
     border-radius: 10px;
-    font-size: 14px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
 }
 
 .promo {
     margin-top: 20px;
     background: white;
     color: #333;
-    padding: 100px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 15px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-
-.haha2 {
-    grid-area: haha2;
-    background-color: rgba(185, 201, 138, 0.801);
-    padding: 25px;
-    color: white;
-
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(130, 4, 4, 0.600);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
 }
 
 /* Footer */
 .haha3 {
     grid-area: haha3;
-    background-color: brown;
+    background-color: rgba(187, 225, 122, 0.692);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
-/* Produtos em cards */
+/* Produtos */
 .produto {
     display: flex;
     flex-wrap: wrap;
@@ -100,18 +103,19 @@ body {
 }
 
 .divv {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    padding: 10px;
-    width: 150px;
+    background-color: rgb(255, 251, 251);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
+    padding: 20px;
+    width: 180px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .divv img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(130, 4, 4, 0.6);
 }
 
 .divv h3 {
@@ -124,8 +128,24 @@ body {
 }
 
 .divv:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 4px 10px rgba(130, 4, 4, 0.6);
+}
+
+/* Botão */
+.botao{
+    background-color: rgb(163, 203, 95);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.botao:hover{
+    background-color: rgb(140,180,70);
 }
 
 /* Responsividade */
@@ -146,6 +166,6 @@ body {
     }
 
     .divv {
-        width: 120px;
+        width: 140px;
     }
 }

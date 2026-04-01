@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lives Cosméticos</title>
-    <img src="Logo de produtos naturais com ervas.png" alt="Loja de Cosméticos">
-    <link rel="stylesheet" href="style.css">
-</head>
-<head>
-    <body>
-        <img src="imagens/Logo de produtos naturais com ervas.png" alt="loja de Cosméticos">
-    </body>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lives Cosméticos</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</header>
+
+<header>
     <header class="haha0">
-        <h1>Loja de Cosméticos</h1>
-    </header>
+    <img src="imagens/logotipo.png" alt="Lives Cosméticos" class="logo">
+     <h1>Lives Cosméticos</h1>
 
-    <main class="haha1">
-        <h1>Produtos</h1>
-        <div class="produto">
-            <div class="divv">
-                <img src="imagens/sabonete.webp" alt="sabonetes">
-                <h3>Sabonete Esfoliante</h3>
-                <p>R$ 50,00</p>
-            </div> 
-            
-            <div class="divv">
-                <img src="imagens/" alt="hidratante">
-                <h3>Hidratante Corporal</h3>
-                <p>R$ 100,00</p>
-            </div>
-        </div>
-    </main>
+     <main class="haha0">
+    <div class="carrinho">
+🛒 <span id="contador">0</span> itens
+<br>
+Total: <span id="total">R$ 0.00</span>
+<br><br>
+<button onclick="finalizarCompra()" class="finalizar">
+Finalizar Compra
+</button>
 
-    <aside class="haha2">
-     <aside class="haha2">
+</header>
+</header>
+
+
+<main class="haha1">
+
+<h1>𝒫𝓇ℴ𝒹𝓊𝓉ℴ𝓈</h1>
+<div class="produto">
+<div class="divv">
+<img src="imagens/sabonete.webp" alt="sabonete">
+
+
+<h3>Sabonete Esfoliante</h3>
+<p>R$ 50,00</p>
+<button onclick="comprar('Sabonete Esfoliante',50)" class="botao">
+Comprar
+</button>
+</div>
+<div class="divv">
+<img src="imagens/hidratante.webp" alt="hidratante">
+
+
+<h3>Hidratante Corporal</h3>
+<p>R$ 100,00</p>
+<button onclick="comprar('Hidratante Corporal',100)" class="botao">
+Comprar
+
+</button>
+</main>
+
+
+<aside class="haha2">
 
 <h2>🌿 Benefícios</h2>
-
 <ul class="beneficios">
-<li> Hidratação natural</li>
-<li> Ingredientes naturais</li>
-<li> Esfoliação suave</li>
-<li> Não testado em animais</li>
-<li> Pele mais macia</li>
+<li>Hidratação natural</li>
+<li>Ingredientes naturais</li>
+<li>Esfoliação suave</li>
+<li>Não testado em animais</li>
+<li>Pele mais macia</li>
 </ul>
 
 <div class="promo">
-<h3> Promoção</h3>
+
+<h3>Promoção</h3>
 <p>Compre 3 sabonetes e ganhe desconto!</p>
 </div>
-
-</aside>
 </aside>
 
-    </aside>
 
-    <footer class="haha3">
-        <h1>footer</h1>
-    </footer>
-    
+<footer class="haha3">
+
+<h1>Footer</h1>
+
+</footer>
+
+<script src="script.js"></script>
 </body>
+
 </html>
