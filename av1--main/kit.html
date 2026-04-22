@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>𝘒𝘪𝘵 𝘚𝘸𝘦𝘦𝘵 𝘔𝘢𝘯𝘨𝘰 | Lives Cosméticos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="haha0">
+  <h1 class="logo">𝓛𝓲𝓿𝓮𝓼 𝓒𝓸𝓼𝓶é𝓽𝓲𝓬𝓸𝓼</h1>
+
+  <nav class="menu">
+    <a href="index.html">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="carrinho">
+    🛒 <span id="contador">0</span> itens
+    <br>
+    Total: <span id="total">R$ 0,00</span>
+    <br>
+    <button onclick="finalizarCompra()" class="finalizar">
+      Finalizar
+    </button>
+  </div>
+</header>
+
+<main class="produto-page">
+
+  <div class="produto-img">
+    <img src="imagen/kit.jpeg" alt="hidratante">
+  </div>
+
+  <div class="produto-info">
+    <h2>Hidratante Corporal</h2>
+
+    <div class="avaliacao">
+      ⭐⭐⭐⭐⭐ <span>(4.9/5)</span>
+    </div>
+
+    <p class="preco">R$ 50,00</p>
+
+    <p class="descricao">
+      Nosso hidratante é feito com ingredientes naturais que nutrem profundamente a pele,
+                deixando-a macia e com um perfume suave.
+    </p>
+
+    <ul>
+      <li>✔ Hidratação profunda</li> 
+      <li>✔ Toque suave</li>
+      <li>✔ Aroma agradável</li>
+    </ul>
+
+    <div class="acoes">
+      <button class="botao"
+        onclick="adicionarCarrinho('Hidratante Corporal', 60)">
+        Adicionar ao carrinho
+      </button>
+
+    </div>
+
+    <a href="index.html" class="voltar">← Voltar</a>
+  </div>
+
+</main>
+
+<footer class="haha3">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h2>Lives Cosméticos</h2>
+      <p>Beleza e cuidado para você 🌿</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Links</h3>
+      <a href="index.html">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contato</h3>
+      <p>📞 (45) 99145-0968</p>
+      <p>✉ contato@livescosmeticos.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Lives Cosméticos
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
